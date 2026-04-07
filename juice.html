@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+    <html>
+<head>
+    <title>Suresh lassi</title>
+    <link rel="icon" href="IMG_20260314_081022.png">
+      <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+</head>
+<style>
+    .zero{
+        justify-content: center;
+        
+    }
+    .one{
+        margin: 20px;
+        display:inline;
+    }
+    .two{
+        margin:20px;
+        display:inline;
+    }
+    .three{
+        margin-top: 5px;
+        display:inline;
+        
+    }
+    button:hover{
+        background-color: white;
+        color:black;
+        cursor:pointer;
+    }
+    button{
+         font-size: 20px;
+        padding:15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor:pointer;
+        
+        
+    }
+    hr{
+        margin-top: 5px;
+        border-color:black;
+
+    }
+    h1{
+        background-color: white;
+        display: inline;
+    }
+    .menu{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+        flex-direction:column;
+        align-items:center;
+    }
+    .item{
+        width:250px;
+        text-align:center;
+        
+    }
+    img{
+        width:100%;
+        height:auto;
+
+    }
+    button{
+        padding:12px 20px;
+        font-size:16px;
+        border-radius:8px;
+    }
+
+</style><body bgcolor="pink">
+<center>
+
+<b><h1>Suresh Lassi</h1></b></center>
+<u><h2>Menu</h2></u>
+<h3><ul>
+    <li>Lassi</li>
+    
+    <li>Rose Milk</li>
+    <li>Badam Milk</li>
+</ul></h3>
+<center>
+   <u> <h2>
+        Juices
+    </h2></u><div class="zero">
+   <div class="one"> <img src="pistachio-lassi-in-tall-glass.jpg" width="200px" height="200px">
+   <h3>Lassi</h3>
+<p><select id="size">
+  <option value= " Small Glass-Rupees 40">Small Glass-Rupees 40</option> <br>
+   <option value="Big Glass-Rupees 50">Big Glass-Rupees 50</option></p></select><br><br>
+    <button onclick="orderLassi()">Order</button></a></p>
+</div><hr><div class="two"> <img src="rose-milk.jpg" width="200px" height="200px"><h3>Rose Milk</h3>
+<p><select id="size1">
+  <option value= " Small Glass-Rupees 25">Small Glass-Rupees 25</option> <br>
+   <option value="Big Glass-Rupees 30">Big Glass-Rupees 30</option></p></select><br><br>
+    <button onclick="orderRoseMilk()">Order</button></a>
+</p> </div><hr><div class="three"><img src="Blog-Thumbnail.jpg" width="200px" height="200px"><h3>Badam Milk</h3><p>
+    <select id="size2">
+  <option value= " Small Glass-Rupees 40">Small Glass-Rupees 40</option> <br>
+   <option value="Big Glass-Rupees 50">Big Glass-Rupees 50</option></p></select><br><br>
+    <button onclick="orderBadamMilk()">Order</button></a>
+    </p>
+</div><hr>
+</center>
+<script>
+    function orderLassi(){
+        let size=document.getElementById("size").value;
+        let message="hello,I want to order Lassi("+size+")";
+       
+        let link="https://wa.me/917373552727?text="+encodeURIComponent(message);
+        window.open(link);
+         alert("Thank You for ordering from our Suresh lassi shop!");
+    }
+    function orderRoseMilk(){
+        let size1=document.getElementById("size1").value;
+        let message="hello,I want to order Rose Milk("+size1+")";
+        alert("Thank You for ordering from our Suresh lassi shop!");
+        let link="https://wa.me/917373552727?text="+encodeURIComponent(message);
+        window.open(link);
+         alert("Thank You for ordering from our Suresh lassi shop!");
+    } 
+    function orderBadamMilk(){
+        let size2=document.getElementById("size2").value;
+        let message="hello,I want to order Badam Milk("+size2+")";
+       alert("Thank You for ordering from our Suresh lassi shop!");
+        let link="https://wa.me/917373552727?text="+encodeURIComponent(message);
+        window.open(link);
+         alert("Thank You for ordering from our Suresh lassi shop!");
+    }
+</script></body>
